@@ -1,5 +1,9 @@
 YOURAppNameHere::Application.routes.draw do
-  devise_scope :user do; root to: 'devise/sessions#new'; end
+  get "welcome/index"
+  root to: "welcome#index"
+
+
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
